@@ -53,6 +53,33 @@ body {
     color: var(--main-bg-color)
 }
 
+/****** Header ********/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 79px;
+}
+
+header > img {
+    object-fit: none;
+}
+.nav-header {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 328.6px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+        border-top: 1px solid #0065FC; 
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -116,7 +143,11 @@ body {
     margin-bottom: 5px;
 }
 
+/******* Footer *******/
 
+.list-footer {
+    list-style: none;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
