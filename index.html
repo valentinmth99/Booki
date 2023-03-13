@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-<!-- oui -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +12,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
     <div class="main-container">
         <header>
@@ -26,13 +24,23 @@
             </nav>
         </header>
         <main>
+            <section class="search-zone">
+                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                <p>En plein centre-ville ou en pleine nature</p>
+                <form>
+                    <label><i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                      <input name="submitted-name" autocomplete="name">
+                    </label>
+                    <button>Rechercher</button>
+                  </form>
+            </section>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
                     <div class="hebergements-title">
                         <h2 class="section-title">Hébergements à Marseille</h2>
                     </div>
                     <div class="hebergements-cards">
-                        <article class="card">
+                        <article class="card"><a href="#">
                             <img src="./images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
                                 <div class="card-txt">
@@ -48,7 +56,7 @@
                                     <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
                             </div>
-                        </article>
+                        </a></article>
                         <article class="card">
                             <img src="./images/hebergements/febrian-zakaria.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
@@ -225,5 +233,4 @@
         </footer>
     </div>
 </body>
-
 </html>

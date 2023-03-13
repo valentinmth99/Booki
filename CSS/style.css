@@ -66,11 +66,6 @@ header {
     height: 79px;
 }
 
-header > img {
-    /* object-fit: none; */
-    width: 1%;
-    height: auto;
-}
 .nav-header {
     list-style: none;
     display: flex;
