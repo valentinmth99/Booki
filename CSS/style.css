@@ -75,9 +75,13 @@ header {
 .nav-link {
     padding-left: 20px;
 }
+
 .nav-link:hover {
         border-top: 1px solid var(--main-color); 
-}
+} 
+
+/******* Section recherche ********/
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -106,13 +110,21 @@ header {
     margin-top: 33px;
 }
 
+/* 
+Adapter image au conteneur 
+W3C validation 
+Li 100% hauteur
+Cartes hebergemnts centrer txt
+max width logo
+css calc
+ancres section nav
+*/
 .hebergements-cards img {
     width: 250px;
-    height: 124px;
+    height: 100px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-
 
 /****** Populaires ***********/
 .populaires {
