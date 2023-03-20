@@ -1,3 +1,13 @@
+/* 
+- Rendre toutes cartes cliquables
+- Jouer hauteurs section recherche 
+-Box sizing hebergements populaires
+*/
+
+
+
+
+
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
@@ -146,6 +156,43 @@ header > img {
     cursor: pointer;
 }
 
+.filter-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+.filter-button {
+    font-weight: 700;
+    font-size: 19px;
+    color: black;
+    background-color: white;
+    border: 3px solid var(--main-bg-color);
+    margin-left: 20px;
+    border-radius: 50px;
+    padding: 0 20px 0 20px;
+}
+
+.filter-button > i {
+    margin-right: 15px;
+}
+
+.filter-button:hover {
+    cursor: pointer;
+    background-color: var(--filter-bg-color);
+}
+
+.info-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info-bar > i {
+    border: 1px solid var(--main-bg-color);
+    border-radius: 50%;
+    padding: 5px 10px 5px 10px;
+    margin-right: 10px;
+}
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -162,6 +209,7 @@ header > img {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    margin: 0;
 }
 
 .hebergements-cards {
@@ -173,15 +221,6 @@ header > img {
     margin-top: 33px;
 }
 
-/* 
-Adapter image au conteneur 
-W3C validation 
-Li 100% hauteur
-Cartes hebergemnts centrer txt
-max width logo
-css calc
-ancres section nav
-*/
 .hebergements-cards img {
     width: 250px;
     height: 100px;
@@ -195,6 +234,10 @@ ancres section nav
 
 .hebergements-cards .card-rating {
     margin-bottom: 15px;
+}
+
+.hebergements-link {
+    /* align-items: center; */
 }
 
 /****** Populaires ***********/
@@ -240,6 +283,37 @@ ancres section nav
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+}
+
+/****** Activites ******/
+
+.activites {
+    margin: 80px 30px 70px 30px;
+}
+
+.activites-title {
+    margin-bottom: 40px;
+}
+
+.activites-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.activites-cards .card {
+    padding: 0;
+}
+
+.activites-cards img {
+    width: 297.5px;
+    height: 380px;
+    border-radius: 20px 20px 0 0;
+}
+
+.activites-cards h4 {
+    padding-left: 20px;
+    padding-bottom: 5px;
 }
 
 /******* Footer *******/
@@ -302,5 +376,22 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+    body {
+        max-width: 100%
+    }
+    
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+
+    }
 }
