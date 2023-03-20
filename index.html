@@ -17,9 +17,9 @@
         <header>
             <img src="./images/logo/Booki.png" alt="logo Booki">
             <nav>
-                <ul class="nav-header">
-                    <li><a href="#" class="nav-link">Hébergements</a></li>
-                    <li><a href="#" class="nav-link">Activités</a></li>
+                <ul class="nav-list">
+                    <li class="nav-link"><a href="#hebergements">Hébergements</a></li>
+                    <li class="nav-link"><a href="#activites">Activités</a></li>
                 </ul>
             </nav>
         </header>
@@ -29,12 +29,11 @@
                 <p>En plein centre-ville ou en pleine nature</p>
                 <form>
                     <div class="search-bar">
-                        <label><i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-                        <input name="submitted-name" autocomplete="name">
-                        </label>
-                        <button>Rechercher</button>
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                        <input class="bar-input" type="text" placeholder="Marseille, France">
+                        <button class="bar-button">Rechercher</button>
                     </div>
-                    <div class="filter-bar">
+                    <!-- <div class="filter-bar">
                         <h3>Filtres</h3> 
                         <input type="radio" name="demo2" class="demo2 demoyes" id="demo2-a">
                         <label for="demo2-a">Économique</label>
@@ -44,13 +43,13 @@
                         <label for="demo2-a">Romantique</label>
                         <input type="radio" name="demo2" class="demo2 demoyes" id="demo2-a">
                         <label for="demo2-a">Nos pépites</label>
-                    </div>
+                    </div> -->
                 </form>
-                <i class="fa-light fa-circle-info"></i>
+                <i class="fa-solid fa-info"></i>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </section>
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
+                <section id ="hebergements" class="hebergements">
                     <div class="hebergements-title">
                         <h2 class="section-title">Hébergements à Marseille</h2>
                     </div>
