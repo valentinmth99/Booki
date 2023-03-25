@@ -1,16 +1,14 @@
 /* 
-- Rendre toutes cartes cliquables
+
 - Jouer hauteurs section recherche 
 -Box sizing hebergements populaires
-*/
 
-/* Hauteur carte hebergements
-Ancre activites 
+
 Changer pourcentages width sections pour mobile
 inverser pop et hebergements section pour mobile
 Change height txt carte hebergements
 
-
+*/
 
 
 /****** General ***********/
@@ -80,7 +78,6 @@ a {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 header > img {
@@ -161,6 +158,10 @@ header > img {
     cursor: pointer;
 }
 
+.bar-button-mobile {
+    display: none;
+}
+
 .filter-bar {
     display: flex;
     flex-direction: row;
@@ -198,7 +199,9 @@ header > img {
     padding: 5px 10px 5px 10px;
     margin-right: 10px;
 }
+
 /****** Hebergements And Populaires ***********/
+
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -212,6 +215,7 @@ header > img {
 }
 
 /****** Hebergements ***********/
+
 .hebergements {
     width: 65%;
     margin: 0;
@@ -221,14 +225,15 @@ header > img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    row-gap: 33px;
 }
-.hebergements-cards .card {
-    margin-top: 33px;
+.hebergements-title {
+    margin-bottom: 33px;
 }
 
 .hebergements-cards img {
     width: 250px;
-    height: 100px;
+    height: 110px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -242,10 +247,11 @@ header > img {
 }
 
 .hebergements-link {
-    /* align-items: center; */
+    margin-top: 35px;
 }
 
 /****** Populaires ***********/
+
 .populaires {
     width: 32%;
 }
@@ -290,6 +296,11 @@ header > img {
     margin-bottom: 5px;
 }
 
+.none {
+    padding: 0;
+    margin: 0;
+}
+
 /****** Activites ******/
 
 .activites {
@@ -318,7 +329,7 @@ header > img {
 
 .activites-cards h4 {
     padding-left: 20px;
-    padding-bottom: 5px;
+    padding-bottom: 25px;
 }
 
 /******* Footer *******/
@@ -340,6 +351,7 @@ footer {
 
 .list-footer {
     list-style: none;
+    padding-right: 40px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -382,22 +394,48 @@ footer {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
+    /****** General ***********/
+
     body {
-        max-width: 100%
+        max-width: 100%;
     }
     
     .main-container {
         display: flex;
         flex-direction: column;
-        width: 100%;
-        /* justify-content: center; */
         margin: 0;
         padding: 0;
     }
 
+    /****** Header ********/
+
     header {
         display: flex;
         flex-direction: column;
-
+        align-items: center;
     }
+
+    /******* Section recherche ********/
+
+    .filter-bar{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .bar-button{
+        display: none;
+    }
+
+    .bar-button-mobile{
+        display: inline;
+    }
+
+    /****** Activites ******/
+
+    .activites-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /******* Footer *******/
 }
