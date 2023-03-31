@@ -78,6 +78,8 @@ body {
 a {
     text-decoration: none;
     color: black;
+    padding: 0;
+    margin: 0;
 }
 
 /****** Header ********/
@@ -226,27 +228,56 @@ header > img {
 
 /****** Hebergements ***********/
 
-.hebergements {
-    width: 65%;
-    margin: 0;
-    background-color: var(--main-bg-color)
-}
-
+/* Main container */
 .hebergements-cards {
     display: flex;
     flex-wrap: wrap;
+    row-gap: 20px;
     justify-content: space-between;
-    row-gap: 33px;
-}
-.hebergements-title {
-    margin-bottom: 33px;
-}
-
-.hebergements-cards img {
-    width: 240px;
-    height: 110px;
+    margin: 0 auto;
+  }
+  
+  /* Cards */
+.hebergements-cards .card {
+    flex-basis: calc(33.333% - 2%);
+    margin-bottom: 2%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  
+.hebergements-cards .card img {
+    width: 100%;
+    height: 124px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+  }
+  
+  /* Responsiveness
+  @media (max-width: 768px) {
+    .hebergements-cards {
+      width: 100%;
+    }
+  
+    .card {
+      flex-basis: calc(50% - 2%);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      flex-basis: 100%;
+    }
+  } */
+  
+
+.hebergements {
+    width: 65%;
+    background-color: var(--main-bg-color)
+}
+
+.hebergements-title {
+    margin-bottom: 33px;
 }
 
 .hebergements-cards .card-content {
@@ -322,6 +353,7 @@ header > img {
 
 .activites {
     margin: 80px 30px 70px 30px;
+    width: 90%;
 }
 
 .activites-title {
