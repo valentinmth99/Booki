@@ -475,11 +475,12 @@ footer {
     }
 
     .search-bar {
-        padding: 0 20px 0 20px;
+        justify-content: center;
     }
 
     .bar-input{
         text-align: left;
+        max-width: 50%;
     }
 
     .bar-input::placeholder{
