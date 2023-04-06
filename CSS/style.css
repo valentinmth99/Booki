@@ -1,4 +1,5 @@
 /****** General ***********/
+
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -95,6 +96,7 @@ header > img {
 .nav-link:hover > a {
     color: var(--main-color);
 }
+
 /******* Section recherche ********/
 
 .search-bar {
@@ -361,6 +363,7 @@ footer {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
+
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
@@ -423,6 +426,7 @@ footer {
 }
 
 /* Small devices (phones, less than 768px) */
+
 @media (max-width: 767.98px) {
 
     /****** General ***********/
@@ -478,13 +482,18 @@ footer {
         justify-content: center;
     }
 
+    .search-bar > i {
+        padding: 16px 15px 16px 15px;
+    }
+
     .bar-input{
         text-align: left;
-        max-width: 50%;
+        font-size: 15px;
     }
 
     .bar-input::placeholder{
         text-align: left;
+        font-size: 15px;
     }
 
     form {
@@ -501,8 +510,8 @@ footer {
         background-color: var(--main-color);
         border-radius: 20px;
         border: 0px;
-        padding: 18px 20px 18px 20px;
-        margin-inline-start: -10px;
+        padding: 16px 15px 16px 15px;
+        margin-inline-start: -15px;
     }
 
     .bar-button-mobile > i {
@@ -520,17 +529,26 @@ footer {
         display: flex;
         flex-wrap: wrap;
         row-gap: 15px;
-        justify-content: center;
+        column-gap: 8px;
+        justify-content: space-around;
     }
 
     .filter-button{
         font-size: 14px;
-        /* width: 46%; */
+        margin: 0;
+        padding: 15px 10px 15px 10px;
+        flex: 1;
+        min-width: 130px;
+    }
+
+    .filter-button > i {
+        margin-right: 10px;
     }
 
     .info-bar  {
         padding-bottom: 0;
     }
+
     /****** Hebergements And Populaires ***********/
 
     .hebergements-and-populaires {
@@ -602,6 +620,5 @@ footer {
     .footer-container{
         display: flex;
         flex-direction: column;
-
     }
 }
